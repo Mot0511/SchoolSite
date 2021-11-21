@@ -46,37 +46,89 @@
       padding: 10px;
       color: white;
     }
-
+.footer{
+  background-color: #009c2c;
+  height: 220px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.footer h2{
+  margin-left: 170px;
+  margin-top: -55px;
+}
+.footing{
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+.footing:hover{
+    color: #454545;
+}
+.bottomFooter{
+  margin-top: 120px;
+  background-color: #007822;
+}
+.bottomFooter p{
+  color: white;
+}
     </style>
 </head>
 <body>
-    <div class="header">
-      <a href="/"><img src="static/img/logo.png" class="logo" alt=""></a>
-      <a href="/" class="heading"><h2>МБОУ СОШ №25 г. Кирова</h2></a>
-      <div class="menu">
+  <div class="header">
+    <a href="/"><img src="static/img/logo.png" class="logo" alt=""></a>
+    <a href="/" class="heading"><h2>МБОУ СОШ №25 г. Кирова</h2></a>
+    <div class="menu">
+      <a href="#schoolInfo"><button class="">
+        Сведения об ОО
+      </button></a>
+        <a href="/forStudents"><button class="">
+        Учащимся
+      </button></a>
+        <a href="/"><button class="">
+        Родителям
+      </button></a>
+        <a href="/"><button class="">
+        Сотрудникам
+      </button></a>
         <a href="#schoolInfo"><button class="">
-          Сведения об ОО
-        </button></a>
-          <a href="/"><button class="">
-          Учащимся
-        </button></a>
-          <a href="/"><button class="">
-          Родителям
-        </button></a>
-          <a href="/"><button class="">
-          Сотрудникам
-        </button></a>
-          <a href="/"><button class="">
-          Контакты
-        </button></a>
-          <a href="/"><button class="">
-          Электронный дневник
-        </button></a>
+        Контакты
+      </button></a>
+        <a href="/forStudents#elJur"><button class="">
+        Электронный дневник
+      </button></a>
 
-      </div>
     </div>
+  </div>
     {%block main%}
 
     {%endblock%}
+    <div class="footer">
+          <a href="/"><img src="static/img/logo.png" class="logo" alt=""></a>
+        <a href="/" class="footing"><h2>МБОУ СОШ №25 г. Кирова</h2></a>
+        <div class="menu">
+          <a href="#schoolInfo"><button class="">
+            Сведения об ОО
+          </button></a>
+            <a href="/"><button class="">
+            Учащимся
+          </button></a>
+            <a href="/"><button class="">
+            Родителям
+          </button></a>
+            <a href="/"><button class="">
+            Сотрудникам
+          </button></a>
+            <a href="/"><button class="">
+            Контакты
+          </button></a>
+            <a href="/"><button class="">
+            Электронный дневник
+          </button></a>
+
+        </div>
+        <div class="bottomFooter">
+          <center><p>2021 - 2021. Создатель MatveySuvorov</p></center>
+        </div>
+    </div>
 </body>
 </html>

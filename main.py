@@ -6,4 +6,8 @@ app = Flask(__name__, static_url_path='/static')
 def index():
     return render_template('index.html')
 
+@app.route('/forStudents')
+def forStudents():
+    return render_template('forStudents.html')
+
 app.run()
