@@ -10,6 +10,15 @@
     .header{
         margin-top: 10px;
     }
+    .heading{
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+    .heading:hover{
+        text-decoration: none;
+        color: #454545;
+    }
     .logo{
       margin-left: 100px;
       width: 50px;
@@ -24,49 +33,46 @@
       margin-top: -55px;
       display: flex;
     }
-    .menu div{
+    .menu button{
       background-color: white;
       border-radius: 10px;
       padding: 10px;
       margin-left: 10px;
+      border: 0px;
       transition: background-color 0.3s;
     }
-    .menu div a{
-      text-decoration: none;
-      color: black;
-      transition: color 0.1s;
-    }
-    .menu div a:hover{
-      text-decoration: none;
-      color: white;
-    }
-    .menu div:hover{
+    .menu button:hover{
       background-color: #007822;
       padding: 10px;
+      color: white;
     }
 
     </style>
 </head>
 <body>
     <div class="header">
-      <img src="static/img/logo.png" class="logo" alt="">
-      <h2>МБОУ СОШ №25 г. Кирова</h2>
+      <a href="/"><img src="static/img/logo.png" class="logo" alt=""></a>
+      <a href="/" class="heading"><h2>МБОУ СОШ №25 г. Кирова</h2></a>
       <div class="menu">
-        <div class="">
-          <a href="/schoolData">Сведения об образовательной организации</a>
-        </div>
-        <div class="">
-          <a href="/contacts">Контакты</a>
-        </div>
-        <div class="">
-          <a href="#service">Сервисы</a>
-        </div>
-        <div class="">
-          <a href="#payServices">Платные услуги</a>
-        </div>
-        <div class="">
-          <a href="/safeSchool">Безопасная школа</a>
-        </div>
+        <a href="/"><button class="">
+          Сведения об ОО
+        </button></a>
+          <a href="/"><button class="">
+          Учащимся
+        </button></a>
+          <a href="/"><button class="">
+          Родителям
+        </button></a>
+          <a href="/"><button class="">
+          Сотрудникам
+        </button></a>
+          <a href="/"><button class="">
+          Контакты
+        </button></a>
+          <a href="/"><button class="">
+          Электронный дневник
+        </button></a>
+
       </div>
     </div>
     {%block main%}

@@ -1,7 +1,7 @@
 {%extends 'base.html'%}
 
 {%block title%}
-Главная - МБОУ СОШ №25 Киров
+МБОУ СОШ №25 Киров
 {%endblock%}
 
 {%block main%}
@@ -33,6 +33,54 @@
   color: white;
   font-size: 50px;
 }
+.newBlock{
+  border: 2px solid grey;
+  border-radius: 10px;
+  width: 400px;
+  padding: 0px;
+  transition: border 0.5s;
+}
+.newBlock:hover{
+  border: 2px solid #007822;
+}
+.newBlock img{
+  height: 40%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+
+}
+.newBlock div{
+  padding: 20px;
+}
+.newBlock a{
+  color: black;
+}
+.allNews{
+  border-radius: 50px;
+  border: 0px;
+  background-color: #007822;
+  transition: background-color 0.5s;
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+  color: white;
+}
+.allNews:hover{
+  background-color: #008f28;
+}
+.btInfo{
+  width: 100%;
+  height: 80px;
+  margin-top: 30px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background-color: white;
+  transition: border 0.3s;
+  font-size: 20px;
+}
+.btInfo:hover{
+  border: 1px solid black;
+}
 </style>
 <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -44,10 +92,6 @@
       <img class="d-block w-100" src="static/img/newImg2.jpg" alt="">
       <h1>Зимний этап Всероссийской акции <br>«Безопасность детства»</h1>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="static/img/newImg3.png" alt="">
-      <h1>Всемирный день памяти <br>жертв ДТП</h1>
-    </div>
   </div>
   <a class="carousel-control-prev" role="button" href="#carouselControls" data-bs-slide="prev">
      <span class="carousel-control-prev-icon"></span>
@@ -56,4 +100,77 @@
      <span class="carousel-control-next-icon"></span>
    </a>
 </div>
+
+<div class="container my-5">
+  <div class="row">
+     <div class="col-md-4 mx-3 newBlock">
+      <img src="static/img/newImg.png" alt="">
+      <div class="">
+        <h4>Всемирный день <br> памяти жертв ДТП</h4>
+        <small>📅19.11.2021</small>
+        <p>
+          Каждое третье воскресенье ноября, начиная с 2005 года отмечается Всемирный день памяти жертв ДТП. <br>
+          Ежегодно по всему миру на дорогах погибают и получают травмы более миллиона людей.
+        </p>
+        <a href="/"><i>Подробнее...</i></a>
+      </div>
+    </div>
+    <div class="col-md-4 mx-3 newBlock">
+      <img src="static/img/newImg2.jpg" alt="">
+      <div class="">
+        <h4>Зимний этап Всероссийской акции<br>
+          «Безопасность детства»</h4>
+        <small>📅19.11.2021</small>
+        <p>
+          По инициативе Уполномоченного при Президенте Российской Федерации по правам ребенка в период<br>
+          с 01.11.2021 по 01.03.2022 <br>
+          проводится зимний этап Всероссийской акции «Безопасность детства».
+        </p>
+        <a href="/"><i>Подробнее...</i></a>
+      </div>
+    </div>
+    <div class="col-md-4 mx-3 newBlock">
+      <img src="static/img/newImg.png" alt="">
+      <div class="">
+        <h4>Всемирный день <br> памяти жертв ДТП</h4>
+        <small>📅19.11.2021</small>
+        <p>
+          Каждое третье воскресенье ноября, начиная с 2005 года отмечается Всемирный день памяти жертв ДТП. <br>
+          Ежегодно по всему миру на дорогах погибают и получают травмы более миллиона людей.
+        </p>
+        <a href="/"><i>Подробнее...</i></a>
+      </div>
+    </div>
+
+  </div>
+  <center><a href="/"><button type="button" class="allNews" name="button">Все новости</button></a></center>
+</div>
+<div class="container">
+  <center><h1>Информация</h1></center>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="/"><button type="button" class="btInfo" name="button">Электронный дневник</button></a>
+    </div>
+    <div class="col-md-4">
+      <a href="/"><button type="button" class="btInfo" name="button">Расписание уроков</button></a>
+    </div>
+    <div class="col-md-4">
+      <a href="/"><button type="button" class="btInfo" name="button">Расписание звонков</button></a>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="/"><button type="button" class="btInfo" name="button">Кружки и секции</button></a>
+    </div>
+    <div class="col-md-4">
+      <a href="/"><button type="button" class="btInfo" name="button">Прием в учереждение</button></a>
+    </div>
+    <div class="col-md-4">
+      <a href="/"><button type="button" class="btInfo" name="button">О школьном питании</button></a>
+    </div>
+
+  </div>
+</div>
+
 {%endblock%}
