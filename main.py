@@ -10,4 +10,8 @@ def index():
 def forStudents():
     return render_template('forStudents.html')
 
+@app.route('/forParents')
+def forParents():
+    return render_template('forParents.html')
+
 app.run()
