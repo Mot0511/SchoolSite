@@ -14,4 +14,8 @@ def forStudents():
 def forParents():
     return render_template('forParents.html')
 
+@app.route('/forTeachers')
+def forTeachers():
+    return render_template('forTeachers.html')
+
 app.run()
